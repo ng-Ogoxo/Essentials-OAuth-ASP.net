@@ -24,6 +24,7 @@ Public Class Redirect
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
       
+      'Get the access token and display it in a pop p.
         MsgBox(getTokens(getAccessCode().ToString))
     End Sub
 
