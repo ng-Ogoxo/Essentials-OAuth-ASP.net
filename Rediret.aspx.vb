@@ -129,8 +129,11 @@ Public Class Redirect
         reader.Close()
         dataStream.Close()
         response.Close()
+        
+        'Trim to get just the string you want from the token for using in your headers
         Dim theToken As String = accessToken.Substring(17, 912)
 
+        '
         Return theToken
 
 
